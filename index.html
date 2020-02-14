@@ -1,0 +1,46 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pagina Sanfers</title>
+<link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <div class="caja-login">
+    <img class="logo" src="Imagenes/SanFers.jpg" alt="">
+<h1>Registro</h1>
+<form name="login">
+         <label for="Usuario">Usuario</label>
+           <input name="usuario" type="text" placeholder="Ingresa Usuario" class="Input" value="" size="20" />
+         <label for="Contraseña">Contraseña</label>
+        <input name="password" type="password" placeholder="Ingresa Contraseña" class="Input" value="" size="20" />
+
+        <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/>
+        <li class="menu__link"><a href="contactos.html">Contactanos</a></li>
+        <li class="menu__link"><a href="queesesto.html">¿Qué es esto?</a></li>
+</form>
+</div>
+
+<script language="JavaScript">
+function Login(){
+var done=0;
+var usuario=document.login.usuario.value;
+var password=document.login.password.value;
+if (usuario=="comprador" && password=="comprador") {
+window.location="comprador.html";
+}
+if (usuario=="administrador" && password=="administrador") {
+window.location="administrador.html";
+}
+if (usuario=="" && password=="") {
+window.location="error.html";
+}
+}
+</script>
+</center>
+<script language="Javascript">
+<!-- Begin
+document.oncontextmenu = function(){return false}
+// End -->
+</script>
+</body>
+</html>
